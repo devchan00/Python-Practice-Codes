@@ -1,0 +1,53 @@
+{
+  "title": "Python Intermediate Quiz",
+  "questions": [
+    {
+      "prompt": "What does [x * 2 for x in range(3)] evaluate to?",
+      "choices": ["[0, 2, 4]", "[2, 4, 6]", "(0, 2, 4)", "[0, 1, 2]"],
+      "answer": 0,
+      "topic": "comprehensions"
+    },
+    {
+      "prompt": "Which built-in pairs items from two lists position by position?",
+      "choices": ["map", "zip", "filter", "enumerate"],
+      "answer": 1,
+      "topic": "functional helpers"
+    },
+    {
+      "prompt": "In def f(*args, **kwargs), what type is kwargs?",
+      "choices": ["tuple", "list", "dict", "set"],
+      "answer": 2,
+      "topic": "arguments"
+    },
+    {
+      "prompt": "Which keyword rebinds a name in the enclosing function's scope?",
+      "choices": ["global", "local", "outer", "nonlocal"],
+      "answer": 3,
+      "topic": "scope"
+    },
+    {
+      "prompt": "Which file mode fails if the file already exists?",
+      "choices": ["w", "a", "x", "r+"],
+      "answer": 2,
+      "topic": "files"
+    },
+    {
+      "prompt": "Which decorator makes a method receive the class as its first argument?",
+      "choices": ["@staticmethod", "@classmethod", "@property", "@abstractmethod"],
+      "answer": 1,
+      "topic": "classes"
+    },
+    {
+      "prompt": "What does 'raise NewError() from e' store e in?",
+      "choices": ["__context__", "__cause__", "__traceback__", "args"],
+      "answer": 1,
+      "topic": "exceptions"
+    },
+    {
+      "prompt": "Which function parses a string into a datetime?",
+      "choices": ["strftime", "strptime", "fromtimestamp", "isoformat"],
+      "answer": 1,
+      "topic": "dates"
+    }
+  ]
+}

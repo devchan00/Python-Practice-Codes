@@ -1,0 +1,21 @@
+# .pre-commit-config.yaml
+# Setup once:   pip install pre-commit && pre-commit install
+# Then these hooks run automatically on every `git commit`.
+# Run on all files manually:  pre-commit run --all-files
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-toml
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff          # linter (also replaces isort with the "I" rules)
+        args: [--fix]
+      - id: ruff-format   # formatter (black-compatible)
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.11.2
+    hooks:
+      - id: mypy
